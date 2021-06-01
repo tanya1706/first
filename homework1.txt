@@ -1,0 +1,58 @@
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
+4) Создать 3 папки - mkdir tatyana vasiliy petr 
+5) Зайти в любую папку - cd foldername
+6) Создать 5 файлов (3 txt, 2 json) - touch tanya.txt vasya.tst petya.txt masha.json pasha.json
+7) Создать 3 папки mkdir name firstname lastname
+8. Вывести список содержимого папки ls tatyana
+9) + Открыть любой txt файл - vim tanya.txt
+10) + написать туда что-нибудь, любой текст. 
+в vim написать I believe I can fly
+11) + сохранить и выйти. esc :wq enter
+12) Выйти из папки на уровень выше cd .. 
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv tanya.txt tatyana
+mv vasya.txt vasiliy
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp ./tanya/masha.json ./vasiliy/masha.json
+cp ./masha.json ./petr/masha.json
+15) Найти файл по имени
+find . -name "pasha.json"
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+grep -i believe one.txt
+или
+tail -f one.txt | grep believe
+или
+cat file.txt | grep string 
+17) вывести несколько первых строк из текстового файла
+head -n 3 one.txt
+18) вывести несколько последних строк из текстового файла
+tail -n 5 one.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less one.txt
+20) вывести дату и время
+date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+https://api.quarantine.country/api/v1/regions
+curl https://api.quarantine.country/api/v1/regions
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+#!/bin/bash
+
+cd tanya
+mkdir one two three
+cd one
+touch one.txt two.txt three.txt four.json five.json
+mkdir russia ukraine poland
+ls poland
+mv one.txt russia
+mv two.txt ukraine
+
+esc :wq enter
+
+./script.sh
