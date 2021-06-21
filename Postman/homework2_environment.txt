@@ -1,0 +1,34 @@
+{
+	"id": "622a07a9-f52f-4833-8f89-9500c1a6af84",
+	"name": "Group_19",
+	"values": [
+		{
+			"key": "token",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "url",
+			"value": "http://168.119.182.98:5002",
+			"enabled": true
+		},
+		{
+			"key": "salary",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "name",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "Cur_ID",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2021-06-21T10:07:39.674Z",
+	"_postman_exported_using": "Postman/8.6.2"
+}
